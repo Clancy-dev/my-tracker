@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.example.com/css2?family=Mona+Sans:wght@200;500&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <section class="section-one">
+
+        <form action="" class="pop-up close-popup ">
+            <div class="transactions">
+                <p>New Transaction</p>
+                <div class="close-btn">
+                <i class='bx bx-x' id="cancel-icon"></i>
+                </div>
+
+            </div>
+            <div class="middle-form">
+            <div class="form input">
+                <label for="title">Title</label>
+                <input type="text" id="title" placeholder="Enter title">
+            </div>
+            <div class="form input">
+                <label for="amount">Amount</label>
+                <input  type="number" id="amount" placeholder="Enter Amount">
+            </div>
+            </div>
+
+            <div class="input-radio">
+                <p>Select the transaction type</p>
+                <div class="">
+                    <input type="radio" name="type" value="income" id="income">
+                    <label for="income">Income</label>    
+                </div>
+                <div class="">
+                    <input type="radio" name="type" value="expense" id="expense">
+                    <label for="expense">Expense</label>
+                </div>
+
+            </div>
+
+            <div class="btns">
+                <button type="button" class="close-btn">Close</button>
+                <button class="submit-btn">Create</button>
+                    
+            </div>
+
+
+
+
+
+        </form>
+
+        <div class="overlay hide-overlay"></div>
+
+        <div class="card">
+            <div class="top-card">
+                <div class="inner-top-card-1">
+                    <div class="inner-inner-top-card-1">
+                        <img src="logo.jfif" alt="" class="logo">
+
+
+                    </div>
+                    <div class="inner-inner-top-card-2">
+                       <div class="hello">
+                        Hello Faiz
+                       </div>
+                       <div class="">
+                        Welcome Back!
+                       </div>
+                    </div>
+                    <div class="inner-inner-top-card-3">
+                        <i class='bx bx-menu'></i>
+                    </div>
+
+                </div>
+                <div class="inner-top-card-2">
+                    <div class="">
+                        Balance
+
+                    </div>
+                    <div class="balance-number">
+                        $0
+
+                    </div>
+
+                </div>
+                <div class="inner-top-card-3">
+
+                    <div class="inner-3">
+                        <div class="arrow">
+                            <i class='bx bx-up-arrow-circle' id="arrow-1"></i>
+                            
+
+                        </div>
+                        <div class="words">
+                            <div class="income">
+                                Income
+
+                            </div>
+                            <div class="income-number">
+                                $0
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="inner-3">
+                        <div class="arrow">
+                            <i class='bx bx-down-arrow-circle' id="arrow-2"></i>
+
+                        </div>
+                        <div class="words">
+                            <div class="expense">
+                                Expense
+
+                            </div>
+                            <div class="expense-number">
+                                $0
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="recent">
+                Recent Transactions
+            </div>
+            <div class="middle-card">
+                
+
+<!-- 
+                what is being cat to javascript -->
+
+                <!-- <div class="recent-1">
+                    <div class="recent-1-left">
+                        <i class='bx bx-down-arrow-circle'></i>
+                    <div class="recent-2-left">
+                        <div class="cloths">
+                            A-one foods
+                        </div>
+                        <div class="shopping">
+                            Food                          
+                        </div>    
+                    </div>
+                    <div class="recent-3-left">
+                        <div class="fig-3">
+                            -$2653
+                        </div>
+                        <div class="date">
+                            Today                          
+                        </div>                       
+                    </div>
+                </div>
+ -->
+            </div>
+
+            <div class="bottom-card">
+                <div class="inner-bottom-card">
+                    <i class='bx bx-home-alt'></i>
+
+                </div>
+                <div class="inner-bottom-card">
+                    <i class='bx bx-bar-chart-alt-2' ></i>
+                    
+                </div>
+                <button class="inner-bottom-card" id="white-circle">
+                    <i class='bx bx-plus' ></i>
+
+                </button>
+                <div class="inner-bottom-card">
+                    <i class='bx bx-bell' ></i> 
+                </div>
+                <div class="inner-bottom-card">
+                    <i class='bx bx-user' ></i>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
