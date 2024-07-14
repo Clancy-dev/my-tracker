@@ -391,7 +391,7 @@
 
     form{
         width: 55%;
-        height: 70%;
+        height: 70vh;
         background-color: white;
         position: fixed;
         top: 11%;
@@ -416,7 +416,7 @@
         @media (max-width:631px) {
             width: 100%;
             right: 0%;
-            height: 95%;
+            height: 95vh;
             top: 5%;
             
         }
@@ -456,6 +456,7 @@
                 width: 80%;
                 padding: 0.5rem;
                 font-size: 105%;
+
                 
                 
             }
@@ -463,6 +464,7 @@
                 width: 75%;
                 padding: 0.5rem;
                 font-size: 105%;
+                margin-bottom: 2rem;
                 @media (max-width:418px) {
                     width: 70%;
                 }
