@@ -192,8 +192,16 @@ function renderTransactions(transactions){
                         <div class="fig-3">  
                         $${transaction.amountValue}      
                         </div>
-                        <div class="date">
-                            Today    
+                        <div class="under-btns">
+                             <button class='btn1'>
+                             <i class='bx bx-edit'></i>    
+                             </button class="btn-2">
+                             <button class='btn2'>
+                             <i class='bx bxs-trash'></i>
+                             </button>
+                             <button class='btn3'>
+                             <i class="fa-regular fa-eye"></i>
+                             </button>
                         </div>    
                     </div>
 

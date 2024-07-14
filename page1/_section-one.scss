@@ -8,6 +8,7 @@
     font-family: 'Mona Sans', sans-serif;
     padding-top: 3rem;
     overflow: hidden;
+    padding-bottom: 3rem;
 
 
 
@@ -265,11 +266,12 @@
            
             .recent-1{
                 width: 100%;
-                height: 6.2vh;
+                height: 10vh;
                 display: flex;
+                padding: 0.2rem;
                 gap: 0.5rem;
                 border-radius: 10px;
-                border: 2px solid rgb(248,248,248) ;
+                border: 2px solid rgb(221, 218, 218) ;
                 
 
 
@@ -298,11 +300,14 @@
                 .recent-2-left{
                     width: 55%;
                     height: 6.2vh;
+                    display: flex;
+                    align-items: center;
                     
 
                     .cloths{
                         font-size: 120%;
                         font-weight: 540;
+                        
                     }
                     .shopping{
                         font-size: 80%;
@@ -312,13 +317,59 @@
                 .recent-3-left{
                     width: 20%;
                     height: 6.2vh;
+                    padding: 0.3rem;
+                    @media (max-width:447px) {
+                          width: 70%;  
+                    }
+                    
 
                     .fig-3{
                         font-size: 120%;
                         font-weight: 540;
                     }
-                    .date{
-                        font-size: 80%;
+                    .under-btns{
+                        width: 100%;
+                        height: 84%;
+                        display: flex;
+                        gap: 7%;
+                       
+
+                        button{
+                            padding: 5% 1.5%;
+                            font-size: 140%;
+                            border-radius: 50%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            cursor: pointer;
+                            border: none;
+                            @media (max-width:1115px) {
+                                padding: 5% 1.5%;
+                            }
+                            @media (max-width: 447px) {
+                                padding: 5% 1.5%;
+                            }
+
+                            
+                        }
+                       .btn1{
+                        color: green;
+                        background-color: rgba(0, 128, 0, 0.192);
+                       }
+                       .btn2{
+                        color: rgb(211, 4, 4);
+                        background-color: rgba(255, 0, 0, 0.158);
+                       }
+                       .btn3{
+                        color: green;
+                        background-color: rgba(0, 128, 0, 0.192);
+                       }
+                       
+                        
+                        
+
+               
+                        
                     }
                 }
             }
