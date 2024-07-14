@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(204,204,204);;
+}
+
+.bx-down-arrow-circle{
+    color: red;
+    background-color: rgba(255, 0, 0, 0.158);
+    border-radius: 50%;
+}
+.bx-up-arrow-circle{
+    color: green;
+    background-color: rgba(0, 128, 0, 0.192);
+    border-radius: 50%;
+   
+}
+html{
+    overflow: hidden;
+}

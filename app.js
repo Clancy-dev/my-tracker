@@ -5,6 +5,18 @@ const balanceNumber = document.querySelector(".balance-number");
 const incomeNumber = document.querySelector(".income-number");
 const expenseNumber = document.querySelector(".expense-number");
 
+//input compression
+document.querySelectorAll('input, textarea').forEach((element) => {
+    element.addEventListener('focus', () => {
+        document.body.style.overflow = 'hidden';
+    });
+    element.addEventListener('blur', () => {
+        document.body.style.overflow = 'auto';
+    });
+});
+
+
+
 /**
  * STEP 1 Declaring the overlay and popup to Javascript
  */
@@ -243,6 +255,8 @@ function updateUi(){
 }
 //callback the above function
 updateUi(transactions);
+
+
 
 
 
