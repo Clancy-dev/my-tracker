@@ -4,6 +4,10 @@
 const balanceNumber = document.querySelector(".balance-number");
 const incomeNumber = document.querySelector(".income-number");
 const expenseNumber = document.querySelector(".expense-number");
+const titleInputElement = document.querySelector("#title");
+const amountInputElement = document.querySelector("#amount");
+const incomeInputElement = document.querySelector("#income");
+const descriptionInputElement = document.querySelector(".description");
 
 //input compression
 document.querySelectorAll('input, textarea').forEach((element) => {
@@ -106,15 +110,15 @@ form.addEventListener("submit",(e)=>{
     */
     //Note: All the input declarations are put inside the form event listener.
     //Title Input
-    const titleInputElement = document.querySelector("#title");
+
     const titleValue = titleInputElement.value;
     //console.log(titleValue);
     //Amount Input
-    const amountInputElement = document.querySelector("#amount");
+
     const amountValue = amountInputElement.value;
     //console.log(amountValue);
     //Income Input
-    const incomeInputElement = document.querySelector("#income");
+
     const incomeValue = incomeInputElement.value;
     //This is a checkbox we want to make its type vary by using let.
     let type = "";
@@ -132,10 +136,15 @@ form.addEventListener("submit",(e)=>{
 
     //(B)
     //Stop the form from submitting empty inputs.(|| stands for OR)
-    if(titleValue ==="" || amountValue ==="" || type ===""){
+    if(titleValue ==="" || amountValue ==="" || description ==="" || type ===""){
        return alert("All the fields are required!");
     
     }
+
+
+    const date = new Date();
+    const id = date.getTime();
+    const createdAt = date.toDateString();
 
     //(C)
     //Creation of Transactions
@@ -146,7 +155,10 @@ form.addEventListener("submit",(e)=>{
     const newTransaction ={
         titleValue,
         amountValue:Number(amountValue),//It was amount, why we added number(amount) is because we want to change it from a string to a plain number.
+        description,
         type,
+        createdAt,
+
     };
     //we add the new transaction into our array.
     transactions.push(newTransaction);
@@ -167,6 +179,8 @@ form.addEventListener("submit",(e)=>{
     updateUi(transactions);
     
 });
+
+
 
 /*******************************************************
  * PART THREE
@@ -195,7 +209,7 @@ function renderTransactions(transactions){
                         <div class="under-btns">
                              <button class='btn1'>
                              <i class='bx bx-edit'></i>    
-                             </button class="btn-2">
+                             </button>
                              <button class='btn2'>
                              <i class='bx bxs-trash'></i>
                              </button>

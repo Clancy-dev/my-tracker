@@ -479,47 +479,94 @@ html {
 .section-one form .transactions .close-btn {
   cursor: pointer;
 }
-.section-one form .middle-form {
+.section-one form .input-container {
   width: 100%;
-  height: 30%;
+  height: 18vh;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   font-size: 120%;
 }
-.section-one form .middle-form #title {
-  width: 80%;
-  padding: 0.5rem;
-  font-size: 105%;
-}
-.section-one form .middle-form #amount {
-  width: 75%;
-  padding: 0.5rem;
-  font-size: 105%;
-  margin-bottom: 2rem;
-}
-@media (max-width: 418px) {
-  .section-one form .middle-form #amount {
-    width: 70%;
+@media (max-width: 900px) {
+  .section-one form .input-container {
+    height: 25vh;
   }
 }
-.section-one form .input-radio {
+@media (max-width: 631px) {
+  .section-one form .input-container {
+    height: 27vh;
+  }
+}
+.section-one form .input-container .inner-input-container-1 {
   width: 100%;
-  height: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-right: 0.5rem;
+}
+.section-one form .input-container .inner-input-container-1 #title {
+  width: 80%;
+  padding: 0.6rem;
+  font-size: 110%;
+}
+.section-one form .input-container .inner-input-container-2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-right: 0.5rem;
+}
+.section-one form .input-container .inner-input-container-2 #amount {
+  width: 80%;
+  padding: 0.6rem;
+  font-size: 110%;
+}
+.section-one .description-container {
+  width: 100%;
+  height: 15vh;
+  padding: 0.5rem;
+  font-size: 110%;
+  display: flex;
+  gap: 1rem;
+}
+@media (max-width: 631px) {
+  .section-one .description-container {
+    height: 26vh;
+    flex-direction: column;
+  }
+}
+.section-one .description-container #description {
+  width: 80%;
+  height: 12vh;
+  padding: 0.6rem;
+  font-size: 130%;
+  resize: none;
+}
+@media (max-width: 631px) {
+  .section-one .description-container #description {
+    width: 100%;
+    height: 16vh;
+  }
+}
+.section-one .input-radio {
+  width: 100%;
+  height: 14vh;
   display: flex;
   flex-direction: column;
   font-size: 110%;
   gap: 0.3rem;
 }
-.section-one form .btns {
+.section-one .btns {
   width: 100%;
-  height: 25%;
+  height: 9vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1rem 1.5rem;
 }
-.section-one form .btns .close-btn {
+.section-one .btns .close-btn {
   height: 30%;
   padding: 1.3rem 1.5rem;
   display: flex;
@@ -530,8 +577,9 @@ html {
   width: 35%;
   font-size: 140%;
   color: rgb(85, 81, 81);
+  border: 1px solid rgb(85, 81, 81);
 }
-.section-one form .btns .submit-btn {
+.section-one .btns .submit-btn {
   width: 27%;
   height: 30%;
   background-color: green;
@@ -546,10 +594,12 @@ html {
   font-size: 140%;
   border: none;
 }
-.section-one .close-popup {
+
+.close-popup {
   display: none;
 }
-.section-one .hide-overlay {
+
+.hide-overlay {
   display: none;
 }
 
